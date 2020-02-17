@@ -15,6 +15,7 @@ public class Appliances {
     }
 
     public String getManufacturer() {
+
         return Manufacturer;
     }
 
