@@ -1,6 +1,7 @@
 package com.company;
 
-public class Appliances {
+public abstract class Appliances {
+
     private String Type, Manufacturer;
     private int Price;
 
@@ -33,4 +34,11 @@ public class Appliances {
 
         this.Price = Price;
     }
+
+    public Appliances(String Type, String Manufacturer, int Price){
+        this.Type = Type;
+        this.Manufacturer = Manufacturer;
+        this.Price = Price;
+    }
+    public abstract void Show();
 }

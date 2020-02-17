@@ -1,7 +1,7 @@
 package com.company;
-public class Freezer extends Heavy{
-    private int Volume;
-    private int NoiseLevel;
+public abstract class Freezer extends Heavy{
+
+    private int Volume, NoiseLevel;
     private String Color;
 
     public int getVolume() {
@@ -25,6 +25,14 @@ public class Freezer extends Heavy{
     }
 
     public void setColor(String Color){
+        this.Color = Color;
+    }
+
+    public Freezer(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight,
+                   int Volume, int NoiseLevel, String Color){
+        super(Type, Manufacturer, Price, Length, Width, Height, Weight);
+        this.Volume = Volume;
+        this.NoiseLevel = NoiseLevel;
         this.Color = Color;
     }
 }

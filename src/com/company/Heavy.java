@@ -1,6 +1,7 @@
 package com.company;
 
-public class Heavy extends Appliances{
+public abstract class Heavy extends Appliances{
+
     private int Length, Width, Height, Weight;
 
     public int getLength(){
@@ -32,6 +33,14 @@ public class Heavy extends Appliances{
     }
 
     public void setWeight(int Weight){
+        this.Weight = Weight;
+    }
+
+    public Heavy(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight){
+        super(Type, Manufacturer, Price);
+        this.Length = Length;
+        this.Width = Width;
+        this.Height = Height;
         this.Weight = Weight;
     }
 }
