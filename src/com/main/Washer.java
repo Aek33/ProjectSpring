@@ -1,4 +1,6 @@
-import com.company.Heavy;
+package com.main;
+
+import com.main.Heavy;
 
 public abstract class Washer extends Heavy {
     private int WeightLimit;

@@ -1,4 +1,4 @@
-package com.company;
+package com.main;
 public class Refrigerator extends Freezer{
     private int NumberOfCells, FreezerVolume, ColdstoreVolume, NumberOfDoors;
 

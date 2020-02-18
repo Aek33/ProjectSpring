@@ -1,4 +1,4 @@
-package com.company;
+package com.main;
 
 public abstract class Heavy extends Appliances{
 

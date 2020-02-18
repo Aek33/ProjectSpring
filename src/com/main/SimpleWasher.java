@@ -1,3 +1,5 @@
+package com.main;
+
 public class SimpleWasher extends Washer  {
     private int WashingNoiseLevel;
 

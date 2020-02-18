@@ -1,3 +1,5 @@
+package com.main;
+
 public class Dryer extends Washer {
 
     private int DryerNoiseLevel;

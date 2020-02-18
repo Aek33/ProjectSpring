@@ -1,4 +1,4 @@
-package com.company;
+package com.main;
 public class Main {
     public static void main(String[] args) {
         Refrigerator T1000 = new Refrigerator("T1000", "Samsung", 30000,
