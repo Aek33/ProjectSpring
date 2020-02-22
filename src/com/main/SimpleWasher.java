@@ -12,8 +12,8 @@ public class SimpleWasher extends Washer  {
     }
 
     public SimpleWasher(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight,
-                        int WeightLimit, String LoadingType, String Color, int WashingNoiseLevel){
-        super(Type, Manufacturer, Price, Length, Width, Height, Weight, WeightLimit, LoadingType, Color);
+            String Color, int WeightLimit, String LoadingType, int WashingNoiseLevel){
+        super(Type, Manufacturer, Price, Length, Width, Height, Weight, Color, WeightLimit, LoadingType);
         this.WashingNoiseLevel = WashingNoiseLevel;
     }
 

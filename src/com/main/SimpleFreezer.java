@@ -3,8 +3,8 @@ package com.main;
 public class SimpleFreezer extends Freezer{
 
     public SimpleFreezer(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight,
-                         int Volume, int NoiseLevel, String Color){
-        super(Type, Manufacturer, Price, Length, Width, Height, Weight, Volume, NoiseLevel, Color);
+                         String Color, int Volume, int NoiseLevel){
+        super(Type, Manufacturer, Price, Length, Width, Height, Weight, Color, Volume, NoiseLevel);
     }
     public void Show(){
         System.out.println("Тип: " + getType());

@@ -13,8 +13,8 @@ public class Dryer extends Washer {
     }
 
     public Dryer(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight,
-                        int WeightLimit, String LoadingType, String Color, int DryerNoiseLevel){
-        super(Type, Manufacturer, Price, Length, Width, Height, Weight, WeightLimit, LoadingType, Color);
+                 String Color, int WeightLimit, String LoadingType, int DryerNoiseLevel){
+        super(Type, Manufacturer, Price, Length, Width, Height, Weight, Color, WeightLimit, LoadingType);
         this.DryerNoiseLevel = DryerNoiseLevel;
     }
 

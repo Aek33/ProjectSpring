@@ -35,9 +35,9 @@ public class Refrigerator extends Freezer{
     }
 
     public Refrigerator(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight,
-                        int Volume, int NoiseLevel, String Color, int NumberOfCells, int FreezerVolume,
+                        String Color, int Volume, int NoiseLevel,  int NumberOfCells, int FreezerVolume,
                         int ColdstoreVolume, int NumberOfDoors){
-        super(Type, Manufacturer, Price, Length, Width, Height, Weight, Volume, NoiseLevel, Color);
+        super(Type, Manufacturer, Price, Length, Width, Height, Weight, Color, Volume, NoiseLevel);
         this.NumberOfCells = NumberOfCells;
         this.FreezerVolume = FreezerVolume;
         this.ColdstoreVolume = ColdstoreVolume;

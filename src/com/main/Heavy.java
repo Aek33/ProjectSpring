@@ -3,6 +3,15 @@ package com.main;
 public abstract class Heavy extends Appliances{
 
     private int Length, Width, Height, Weight;
+    private String Color;
+
+    public String getColor(){
+        return Color;
+    }
+
+    public void setColor(String Color){
+        this.Color = Color;
+    }
 
     public int getLength(){
         return Length;
@@ -36,11 +45,13 @@ public abstract class Heavy extends Appliances{
         this.Weight = Weight;
     }
 
-    public Heavy(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight){
+    public Heavy(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight,
+                 String Color){
         super(Type, Manufacturer, Price);
         this.Length = Length;
         this.Width = Width;
         this.Height = Height;
         this.Weight = Weight;
+        this.Color = Color;
     }
 }
