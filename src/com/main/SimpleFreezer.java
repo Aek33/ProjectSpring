@@ -6,7 +6,7 @@ public class SimpleFreezer extends Freezer{
                          String Color, int Volume, int NoiseLevel){
         super(Type, Manufacturer, Price, Length, Width, Height, Weight, Color, Volume, NoiseLevel);
     }
-    public void Show(){
+    public void show(){
         System.out.println("Тип: " + getType());
         System.out.println("Производитель: " + getManufacturer());
         System.out.println("Цена: " + getPrice() + " руб");

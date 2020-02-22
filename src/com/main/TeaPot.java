@@ -16,7 +16,7 @@ public class TeaPot extends Kettle{
         NumberOfTemperatureMods = NOTM;
     }
 
-    public void Show() {
+    public void show() {
         System.out.println("Тип: " + getType());
         System.out.println("Производитель: " + getManufacturer());
         System.out.println("Цена: " + getPrice() + " руб");

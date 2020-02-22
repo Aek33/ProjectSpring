@@ -6,7 +6,8 @@ public class ElectricKettle extends Kettle {
         super(Type, Manufacturer, Price, Material, Color, KettleVolume);
     }
 
-    public void Show() {
+
+    public void show() {
         System.out.println("Тип: " + getType());
         System.out.println("Производитель: " + getManufacturer());
         System.out.println("Цена: " + getPrice() + " руб");

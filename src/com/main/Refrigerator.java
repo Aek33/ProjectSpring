@@ -44,7 +44,7 @@ public class Refrigerator extends Freezer{
         this.NumberOfDoors = NumberOfDoors;
     }
 
-    public void Show() {
+    public void show() {
     System.out.println("Тип: " + getType());
     System.out.println("Производитель: " + getManufacturer());
     System.out.println("Цена: " + getPrice() + " руб");
