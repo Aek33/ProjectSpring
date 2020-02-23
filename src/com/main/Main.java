@@ -1,9 +1,10 @@
 package com.main;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Main{
     public static void main(String[] args) {
-        Appliances[] Array = new Appliances[10];
+        ArrayList<Appliances> Array = new ArrayList<>(20);
         Appliances Product = null;
         Random chaos = new Random();
         for(int i = 0; i < 10; i++){
@@ -44,7 +45,7 @@ public class Main{
                             "Белый");
                     break;
             }
-            Array[i] = Product;
+            Array.add(i, Product);
         }
 
         for (Appliances appliances : Array) {
