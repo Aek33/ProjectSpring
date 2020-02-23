@@ -22,8 +22,8 @@ public class Dryer extends Washer {
             System.out.println("Тип: " + getType());
             System.out.println("Производитель: " + getManufacturer());
             System.out.println("Цена: " + getPrice() + " руб");
-            System.out.println("Габариты: " + getLength() + "x" + getWidth() + "x" + getHeight() + " см");
-            System.out.println("Вес: " + getWeight() +" кг");
+            System.out.println("Габариты: " + getHeavyLength() + "x" + getHeavyWidth() + "x" + getHeavyHeight() + " см");
+            System.out.println("Вес: " + getHeavyWeight() +" кг");
             System.out.println("Максимальная загрузка: " + getWeightLimit() + " литров");
             System.out.println("Тип загрузки: " + getLoadingType());
             System.out.println("Цвет: " + getColor());

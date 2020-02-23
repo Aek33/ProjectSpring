@@ -10,8 +10,8 @@ public class SimpleFreezer extends Freezer{
         System.out.println("Тип: " + getType());
         System.out.println("Производитель: " + getManufacturer());
         System.out.println("Цена: " + getPrice() + " руб");
-        System.out.println("Габариты: " + getLength() + "x" + getWidth() + "x" + getHeight() + " см");
-        System.out.println("Вес: " + getWeight() +" кг");
+        System.out.println("Габариты: " + getHeavyLength() + "x" + getHeavyWidth() + "x" + getHeavyHeight() + " см");
+        System.out.println("Вес: " + getHeavyWeight() +" кг");
         System.out.println("Объем: " + getVolume() + " литров");
         System.out.println("Уровень шума: " + getNoiseLevel() + " Дб");
         System.out.println("Цвет: " + getColor());

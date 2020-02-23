@@ -11,6 +11,7 @@ public abstract class Appliances {
     private ArrayList<Dryer> Dryers = new ArrayList<>();
     private ArrayList<ElectricKettle> ElectricKettles = new ArrayList<>();
     private ArrayList<TeaPot> TeaPots = new ArrayList<>();
+    private ArrayList<Microwave> Microwaves = new ArrayList<>();
     //Getters and Setters
     public String getType() {
 
@@ -65,6 +66,10 @@ public abstract class Appliances {
     public ArrayList<TeaPot> getTeaPots(){
         return TeaPots;
     }
+
+    public ArrayList<Microwave> getMicrowaves(){
+        return Microwaves;
+    }
     //Constructor
     public Appliances(String Type, String Manufacturer, int Price){
         this.Type = Type;
@@ -93,8 +98,13 @@ public abstract class Appliances {
     public void addElectricKettle(ElectricKettle Type){
         ElectricKettles.add(Type);
     }
+
     public void addTeapot(TeaPot Type){
         TeaPots.add(Type);
+    }
+
+    public void addMicrowave(Microwave Type){
+        Microwaves.add(Type);
     }
 
 }

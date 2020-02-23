@@ -2,7 +2,7 @@ package com.main;
 
 public abstract class Heavy extends Appliances{
 
-    private int Length, Width, Height, Weight;
+    private int HeavyLength, HeavyWidth, HeavyHeight, HeavyWeight;
     private String Color;
 
     public String getColor(){
@@ -13,45 +13,45 @@ public abstract class Heavy extends Appliances{
         this.Color = Color;
     }
 
-    public int getLength(){
-        return Length;
+    public int getHeavyLength(){
+        return HeavyLength;
     }
 
-    public void setLength(int Length){
-        this.Length = Length;
+    public void setHeavyLength(int Length){
+        this.HeavyLength = Length;
     }
 
-    public int getWidth(){
-        return Width;
+    public int getHeavyWidth(){
+        return HeavyWidth;
     }
 
-    public void setWidth(int Width){
-        this.Width = Width;
+    public void setHeavyWidth(int Width){
+        this.HeavyWidth = Width;
     }
 
-    public int getHeight(){
-        return Height;
+    public int getHeavyHeight(){
+        return HeavyHeight;
     }
 
-    public void setHeight(int Height){
-        this.Height = Height;
+    public void setHeavyHeight(int Height){
+        this.HeavyHeight = Height;
     }
 
-    public int getWeight(){
-        return Weight;
+    public int getHeavyWeight(){
+        return HeavyWeight;
     }
 
-    public void setWeight(int Weight){
-        this.Weight = Weight;
+    public void setHeavyWeight(int Weight){
+        this.HeavyWeight = Weight;
     }
 
-    public Heavy(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight,
+    public Heavy(String Type, String Manufacturer, int Price, int HeavyLength, int HeavyWidth, int HeavyHeight, int HeavyWeight,
                  String Color){
         super(Type, Manufacturer, Price);
-        this.Length = Length;
-        this.Width = Width;
-        this.Height = Height;
-        this.Weight = Weight;
+        this.HeavyLength = HeavyLength;
+        this.HeavyWidth = HeavyWidth;
+        this.HeavyHeight = HeavyHeight;
+        this.HeavyWeight = HeavyWeight;
         this.Color = Color;
     }
 }
