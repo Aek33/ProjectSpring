@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Main{
     public static void main(String[] args) {
-        ArrayList<Appliances> Array = new ArrayList<>(20);
+        ArrayList<Appliances> Array = new ArrayList<>(10);
         Appliances Product = null;
         Random chaos = new Random();
         for(int i = 0; i < 10; i++){
