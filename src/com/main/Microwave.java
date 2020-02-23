@@ -42,7 +42,7 @@ public class Microwave extends Light {
         System.out.println("Производитель: " + getManufacturer());
         System.out.println("Цена: " + getPrice() + " руб");
         System.out.println("Габариты: " + getLightLength() + "x" + getLightWidth() + "x" + getLightHeight() + " см");
-        System.out.println("Внутренний объем: " + getVolume() + " литров");
+        System.out.println("Внутренний объем: " + getVolume() + " куб.см");
         System.out.println("Мощьность микроволн: " + getMicWavePower() + " Вт");
         System.out.println("Цвет: " + getMicWaveColor());
     }
