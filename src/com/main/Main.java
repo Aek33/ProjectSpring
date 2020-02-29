@@ -32,23 +32,23 @@ public class Main{
                     break;
                 case 4:
                     Product = new ElectricKettle("Чайник T4", "Vitek", 600, 20,
-                            20, 30,"Пластик", "Прозрачный", 2);
+                            20, 30, "Прозрачный","Пластик",  2);
                     break;
                 case 5:
                     Product = new TeaPot("Термопот Termos", "Vitek", 800, 25,
-                            25, 40,"Металл", "Серебристый", 5,
+                            25, 40, "Серебристый","Металл",  5,
                             3);
                     break;
                 case 6:
                     Product = new Microwave("Микроволновка MW100", "R.S.", 700,
-                            40,30, 30, 9, 600,
-                            "Белый");
+                            40,30, 30, "Белый",9, 600);
                     break;
             }
             Array.add(i, Product);
         }
 
         for (Appliances appliances : Array) {
+            System.out.println("\n");
             appliances.show();
         }
     }

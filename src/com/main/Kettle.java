@@ -1,7 +1,7 @@
 package com.main;
 
 public abstract class Kettle extends Light {
-    private String Material, Color;
+    private String Material;
     private int KettleVolume;
 
     public String getMaterial(){
@@ -12,14 +12,6 @@ public abstract class Kettle extends Light {
         this.Material = Material;
     }
 
-    public String getColor(){
-        return Color;
-    }
-
-    public void setColor(String Color){
-        this.Color = Color;
-    }
-
     public int getKettleVolume(){
         return KettleVolume;
     }
@@ -28,11 +20,9 @@ public abstract class Kettle extends Light {
         this.KettleVolume = Volume;
     }
     public Kettle(String Type, String Manufacturer, int Price, int LightLength, int LightWidth, int LightHeight,
-                  String Material, String Color,
-                  int KettleVolume) {
-        super(Type, Manufacturer, Price, LightLength, LightWidth, LightHeight);
+                  String Color, String Material, int KettleVolume) {
+        super(Type, Manufacturer, Price, LightLength, LightWidth, LightHeight, Color);
         this.Material = Material;
-        this.Color = Color;
         this.KettleVolume = KettleVolume;
     }
 }

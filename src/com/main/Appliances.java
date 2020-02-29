@@ -18,24 +18,24 @@ public abstract class Appliances {
         return Type;
     }
 
-    public void setType(String Type){
-
-        this.Type = Type;
-    }
-
     public String getManufacturer() {
 
         return Manufacturer;
     }
 
-    public void setManufacturer(String Manufacturer){
-
-        this.Manufacturer = Manufacturer;
-    }
-
     public int getPrice(){
 
         return Price;
+    }
+
+    public void setType(String Type){
+
+        this.Type = Type;
+    }
+
+    public void setManufacturer(String Manufacturer){
+
+        this.Manufacturer = Manufacturer;
     }
 
     public void setPrice(int Price){
