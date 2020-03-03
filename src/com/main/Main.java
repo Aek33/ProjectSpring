@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Main{
     public static void main(String[] args) {
-        ArrayList<Appliances> Array = new ArrayList<>(10);
+        /*ArrayList<Appliances> Array = new ArrayList<>(10);
         Appliances Product = null;
         Random chaos = new Random();
         for(int i = 0; i < 10; i++){
@@ -50,6 +50,17 @@ public class Main{
         for (Appliances appliances : Array) {
             System.out.println("\n");
             appliances.show();
-        }
+        }*/
+
+        Decorable T2000 = new Refrigerator("Терминатор T2000", "SkyNet",6000, 50,
+                50, 200, 30, "Серебристый", 500, 30,
+                2, 100, 400, 1);
+
+
+        T2000 = new DecoratorDelivery((Appliances) T2000);
+
+        T2000.show();
+
+
     }
 }

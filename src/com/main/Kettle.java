@@ -19,7 +19,7 @@ public abstract class Kettle extends Light {
     public void setKettleVolume(int Volume){
         this.KettleVolume = Volume;
     }
-    public Kettle(String Type, String Manufacturer, int Price, int LightLength, int LightWidth, int LightHeight,
+    public Kettle(String Type, String Manufacturer, double Price, int LightLength, int LightWidth, int LightHeight,
                   String Color, String Material, int KettleVolume) {
         super(Type, Manufacturer, Price, LightLength, LightWidth, LightHeight, Color);
         this.Material = Material;

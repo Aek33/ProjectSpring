@@ -34,7 +34,7 @@ public class Refrigerator extends Freezer{
         this.NumberOfDoors = NumberOfDoors;
     }
 
-    public Refrigerator(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight,
+    public Refrigerator(String Type, String Manufacturer, double Price, int Length, int Width, int Height, int Weight,
                         String Color, int Volume, int NoiseLevel,  int NumberOfCells, int FreezerVolume,
                         int ColdstoreVolume, int NumberOfDoors){
         super(Type, Manufacturer, Price, Length, Width, Height, Weight, Color, Volume, NoiseLevel);
@@ -44,6 +44,7 @@ public class Refrigerator extends Freezer{
         this.NumberOfDoors = NumberOfDoors;
     }
 
+    @Override
     public void show() {
     System.out.println("Тип: " + getType());
     System.out.println("Производитель: " + getManufacturer());

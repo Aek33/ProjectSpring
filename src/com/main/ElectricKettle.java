@@ -2,7 +2,7 @@ package com.main;
 
 public class ElectricKettle extends Kettle {
 
-    public ElectricKettle(String Type, String Manufacturer, int Price, int LightLength, int LightWidth, int LightHeight,
+    public ElectricKettle(String Type, String Manufacturer, double Price, int LightLength, int LightWidth, int LightHeight,
                           String Color, String Material, int KettleVolume) {
         super(Type, Manufacturer, Price, LightLength, LightWidth, LightHeight, Color, Material, KettleVolume);
     }

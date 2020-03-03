@@ -1,10 +1,10 @@
 package com.main;
 import java.util.ArrayList;
 
-public abstract class Appliances {
+public abstract class Appliances implements Decorable{
 
     private String Type, Manufacturer;
-    private int Price;
+    private double Price;
     private ArrayList<Refrigerator> Refrigerators = new ArrayList<>();
     private ArrayList<SimpleFreezer> SimpleFreezers = new ArrayList<>();
     private ArrayList<SimpleWasher> SimpleWashers = new ArrayList<>();
@@ -14,7 +14,6 @@ public abstract class Appliances {
     private ArrayList<Microwave> Microwaves = new ArrayList<>();
     //Getters and Setters
     public String getType() {
-
         return Type;
     }
 
@@ -23,7 +22,7 @@ public abstract class Appliances {
         return Manufacturer;
     }
 
-    public int getPrice(){
+    public double getPrice(){
 
         return Price;
     }
@@ -71,13 +70,13 @@ public abstract class Appliances {
         return Microwaves;
     }
     //Constructor
-    public Appliances(String Type, String Manufacturer, int Price){
+    public Appliances(String Type, String Manufacturer, double Price){
         this.Type = Type;
         this.Manufacturer = Manufacturer;
         this.Price = Price;
     }
     //Abstract method
-    public abstract void show();
+
     //add methods for Arrays
     public void addRefrigirator(Refrigerator Type){
         Refrigerators.add(Type);

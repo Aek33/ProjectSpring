@@ -20,7 +20,7 @@ public abstract class Washer extends Heavy {
         this.LoadingType = LoadingType;
     }
 
-    public Washer(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight,
+    public Washer(String Type, String Manufacturer, double Price, int Length, int Width, int Height, int Weight,
                   String Color, int WeightLimit, String LoadingType){
         super(Type, Manufacturer, Price, Length, Width, Height, Weight, Color);
         this.WeightLimit = WeightLimit;

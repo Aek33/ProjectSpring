@@ -36,7 +36,7 @@ public abstract class Light extends Appliances{
         this.LightHeight = LightHeight;
     }
 
-    public Light(String Type, String Manufacturer, int Price, int LightLength, int LightWidth, int LightHeight,
+    public Light(String Type, String Manufacturer, double Price, int LightLength, int LightWidth, int LightHeight,
                  String Color) {
         super(Type, Manufacturer, Price);
         this.LightLength = LightLength;

@@ -20,7 +20,7 @@ public abstract class Freezer extends Heavy{
     }
 
 
-    public Freezer(String Type, String Manufacturer, int Price, int Length, int Width, int Height, int Weight,
+    public Freezer(String Type, String Manufacturer, double Price, int Length, int Width, int Height, int Weight,
                    String Color, int Volume, int NoiseLevel){
         super(Type, Manufacturer, Price, Length, Width, Height, Weight, Color);
         this.Volume = Volume;

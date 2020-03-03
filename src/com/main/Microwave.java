@@ -20,7 +20,7 @@ public class Microwave extends Light {
        this.MicWavePower = MicWavePower;
    }
 
-    public Microwave(String Type, String Manufacturer, int Price, int LightLength, int LightWidth, int LightHeight,
+    public Microwave(String Type, String Manufacturer, double Price, int LightLength, int LightWidth, int LightHeight,
                      String Color, int Volume, int MicWavePower) {
         super(Type, Manufacturer, Price, LightLength, LightWidth, LightHeight, Color);
         this.Volume = Volume;

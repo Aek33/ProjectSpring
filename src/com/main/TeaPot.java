@@ -11,7 +11,7 @@ public class TeaPot extends Kettle{
         NumberOfTemperatureMods = NOTM;
     }
 
-    public TeaPot(String Type, String Manufacturer, int Price, int LightLength, int LightWidth, int LightHeight,
+    public TeaPot(String Type, String Manufacturer, double Price, int LightLength, int LightWidth, int LightHeight,
                   String Color, String Material, int KettleVolume, int NOTM) {
         super(Type, Manufacturer, Price, LightLength, LightWidth, LightHeight, Color, Material, KettleVolume);
         NumberOfTemperatureMods = NOTM;

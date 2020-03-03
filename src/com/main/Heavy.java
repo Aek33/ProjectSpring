@@ -45,7 +45,7 @@ public abstract class Heavy extends Appliances{
         this.HeavyWeight = Weight;
     }
 
-    public Heavy(String Type, String Manufacturer, int Price, int HeavyLength, int HeavyWidth, int HeavyHeight, int HeavyWeight,
+    public Heavy(String Type, String Manufacturer, double Price, int HeavyLength, int HeavyWidth, int HeavyHeight, int HeavyWeight,
                  String Color){
         super(Type, Manufacturer, Price);
         this.HeavyLength = HeavyLength;
