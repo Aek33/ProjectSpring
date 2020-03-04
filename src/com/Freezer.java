@@ -1,4 +1,4 @@
-package com.main;
+package com;
 public abstract class Freezer extends Heavy{
 
     private int Volume, NoiseLevel;
@@ -20,9 +20,9 @@ public abstract class Freezer extends Heavy{
     }
 
 
-    public Freezer(String Type, String Manufacturer, double Price, int Length, int Width, int Height, int Weight,
+    public Freezer(String Name, String Manufacturer, double Price, int Length, int Width, int Height, int Weight,
                    String Color, int Volume, int NoiseLevel){
-        super(Type, Manufacturer, Price, Length, Width, Height, Weight, Color);
+        super(Name, Manufacturer, Price, Length, Width, Height, Weight, Color);
         this.Volume = Volume;
         this.NoiseLevel = NoiseLevel;
     }

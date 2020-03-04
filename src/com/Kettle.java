@@ -1,4 +1,4 @@
-package com.main;
+package com;
 
 public abstract class Kettle extends Light {
     private String Material;
@@ -19,9 +19,10 @@ public abstract class Kettle extends Light {
     public void setKettleVolume(int Volume){
         this.KettleVolume = Volume;
     }
-    public Kettle(String Type, String Manufacturer, double Price, int LightLength, int LightWidth, int LightHeight,
+
+    public Kettle(String Name, String Manufacturer, double Price, int LightLength, int LightWidth, int LightHeight,
                   String Color, String Material, int KettleVolume) {
-        super(Type, Manufacturer, Price, LightLength, LightWidth, LightHeight, Color);
+        super(Name, Manufacturer, Price, LightLength, LightWidth, LightHeight, Color);
         this.Material = Material;
         this.KettleVolume = KettleVolume;
     }

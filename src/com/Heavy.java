@@ -1,9 +1,39 @@
-package com.main;
+package com;
 
 public abstract class Heavy extends Appliances{
 
+    private String Name, Manufacturer, Color;
+    private double Price;
     private int HeavyLength, HeavyWidth, HeavyHeight, HeavyWeight;
-    private String Color;
+
+    public String getName() {
+        return Name;
+    }
+
+    public String getManufacturer() {
+
+        return Manufacturer;
+    }
+
+    public double getPrice(){
+
+        return Price;
+    }
+
+    public void setName(String Type){
+
+        this.Name = Type;
+    }
+
+    public void setManufacturer(String Manufacturer){
+
+        this.Manufacturer = Manufacturer;
+    }
+
+    public void setPrice(int Price){
+
+        this.Price = Price;
+    }
 
     public String getColor(){
         return Color;
@@ -45,9 +75,11 @@ public abstract class Heavy extends Appliances{
         this.HeavyWeight = Weight;
     }
 
-    public Heavy(String Type, String Manufacturer, double Price, int HeavyLength, int HeavyWidth, int HeavyHeight, int HeavyWeight,
-                 String Color){
-        super(Type, Manufacturer, Price);
+    public Heavy(String Name, String Manufacturer, double Price, int HeavyLength,
+                 int HeavyWidth, int HeavyHeight, int HeavyWeight, String Color){
+        this.Name = Name;
+        this.Manufacturer = Manufacturer;
+        this.Price = Price;
         this.HeavyLength = HeavyLength;
         this.HeavyWidth = HeavyWidth;
         this.HeavyHeight = HeavyHeight;

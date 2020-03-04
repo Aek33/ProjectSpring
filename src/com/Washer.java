@@ -1,4 +1,4 @@
-package com.main;
+package com;
 
 public abstract class Washer extends Heavy {
     private int WeightLimit;
@@ -20,9 +20,9 @@ public abstract class Washer extends Heavy {
         this.LoadingType = LoadingType;
     }
 
-    public Washer(String Type, String Manufacturer, double Price, int Length, int Width, int Height, int Weight,
+    public Washer(String Name, String Manufacturer, double Price, int Length, int Width, int Height, int Weight,
                   String Color, int WeightLimit, String LoadingType){
-        super(Type, Manufacturer, Price, Length, Width, Height, Weight, Color);
+        super(Name, Manufacturer, Price, Length, Width, Height, Weight, Color);
         this.WeightLimit = WeightLimit;
         this.LoadingType = LoadingType;
     }

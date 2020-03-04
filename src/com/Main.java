@@ -1,10 +1,12 @@
-package com.main;
+package com;
+
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Main{
     public static void main(String[] args) {
-        /*ArrayList<Appliances> Array = new ArrayList<>(10);
+        System.out.println("Блок представления продукции");
+        ArrayList<Appliances> Array = new ArrayList<>(10);
         Appliances Product = null;
         Random chaos = new Random();
         for(int i = 0; i < 10; i++){
@@ -46,21 +48,31 @@ public class Main{
             }
             Array.add(i, Product);
         }
-
         for (Appliances appliances : Array) {
-            System.out.println("\n");
             appliances.show();
-        }*/
+            System.out.println("\n");
+        }
 
-        Decorable T2000 = new Refrigerator("Терминатор T2000", "SkyNet",6000, 50,
+        System.out.println("Блок реализации декораторов");
+
+        System.out.println("Создаем экземпляр холодильника");
+        Appliances T2000 = new Refrigerator("Терминатор T2000", "SkyNet",6000, 50,
                 50, 200, 30, "Серебристый", 500, 30,
                 2, 100, 400, 1);
 
+        System.out.println(T2000.getName());
+        System.out.println(T2000.getPrice());
 
-        T2000 = new DecoratorDelivery((Appliances) T2000);
+        System.out.println("Добавляем скидку в 35%");
+        T2000 = new DecoratorDiscount(T2000, 35);
 
-        T2000.show();
+        System.out.println(T2000.getName());
+        System.out.println(T2000.getPrice());
 
+        System.out.println("Добавляем сумму доставки");
+        T2000 = new DecoratorDelivery(T2000);
 
+        System.out.println(T2000.getName());
+        System.out.println(T2000.getPrice());
     }
 }
