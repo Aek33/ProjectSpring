@@ -27,9 +27,14 @@ public class Microwave extends Light {
         this.MicWavePower = MicWavePower;
     }
 
+    @Override
+    public double TotalPrice() {
+        return getPrice();
+    }
+
     public void show() {
         System.out.println("Название: " + getName() + "\n"
-                + "Производитель: " + getManufacturer() + "\n" + "Цена: " + getPrice() + " руб" + "\n"
+                + "Производитель: " + getManufacturer() + "\n" + "Цена: " + TotalPrice() + " руб" + "\n"
                 + "Габариты: " + getLightLength() + "x" + getLightWidth() + "x" + getLightHeight() + " см" + "\n"
                 + "Цвет: " + getColor() + "\n" + "Внутренний объем: " + getVolume() + " куб.см" + "\n"
                 + "Мощьность микроволн: " + getMicWavePower() + " Вт");

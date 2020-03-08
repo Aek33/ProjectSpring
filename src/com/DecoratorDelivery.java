@@ -2,18 +2,20 @@ package com;
 
 public class DecoratorDelivery extends BaseDecorator{
 
-    public DecoratorDelivery(Appliances appliance) {
-        super(appliance);
+    private Appliances appliance;
+
+    public DecoratorDelivery(Appliances appliance){
+        this.appliance = appliance;
+    }
+
+    @Override
+    public double TotalPrice() {
+        return 1000 + appliance.TotalPrice();
     }
 
     @Override
     public String getName() {
-        return appliance.getName() + " С доставкой";
-    }
-
-    @Override
-    public double getPrice() {
-        return appliance.getPrice() + 1000;
+        return appliance.getName() + " С доставкой ";
     }
 
     @Override

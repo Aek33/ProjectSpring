@@ -17,9 +17,14 @@ public class TeaPot extends Kettle{
         NumberOfTemperatureMods = NOTM;
     }
 
+    @Override
+    public double TotalPrice() {
+        return getPrice();
+    }
+
     public void show() {
         System.out.println("Название: " + getName() + "\n" + "Производитель: " + getManufacturer()+ "\n" +
-                "Цена: " + getPrice() + " руб" + "\n" +
+                "Цена: " + TotalPrice() + " руб" + "\n" +
                 "Габариты: " + getLightLength() + "x" + getLightWidth() + "x" + getLightHeight() + " см" + "\n" +
                 "Цвет: " + getColor() + "\n" + "Материал: " + getMaterial() + "\n" +
                 "Общий объем: " + getKettleVolume() + " литров" + "\n" +

@@ -44,10 +44,16 @@ public class Refrigerator extends Freezer{
         this.NumberOfDoors = NumberOfDoors;
     }
 
+
+    @Override
+    public double TotalPrice() {
+        return getPrice();
+    }
+
     @Override
     public void show() {
     System.out.println("Название: " + getName() + "\n" + "Производитель: " + getManufacturer()  + "\n" +
-                    "Цена: " + getPrice() + " руб" + "\n" +
+                    "Цена: " + TotalPrice() + " руб" + "\n" +
                     "Габариты: " + getHeavyLength() + "x" + getHeavyWidth() + "x" + getHeavyHeight() + " см" + "\n" +
                     "Вес: " + getHeavyWeight() +" кг" + "\n" +
                     "Общий объем: " + getVolume() + " литров" + "\n" +

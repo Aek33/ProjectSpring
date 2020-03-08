@@ -1,13 +1,9 @@
 package com;
 
 public abstract class Light extends Appliances{
-    private String Name, Manufacturer, Color;
+    private String Manufacturer, Color;
     private double Price;
     private int LightLength, LightWidth, LightHeight;
-
-    public String getName() {
-        return Name;
-    }
 
     public String getManufacturer() {
 
@@ -17,11 +13,6 @@ public abstract class Light extends Appliances{
     public double getPrice(){
 
         return Price;
-    }
-
-    public void setName(String Type){
-
-        this.Name = Type;
     }
 
     public void setManufacturer(String Manufacturer){
@@ -68,7 +59,7 @@ public abstract class Light extends Appliances{
 
     public Light(String Name, String Manufacturer, double Price, int LightLength, int LightWidth, int LightHeight,
                  String Color) {
-        this.Name = Name;
+        super.setName(Name);
         this.Manufacturer = Manufacturer;
         this.Price = Price;
         this.LightLength = LightLength;

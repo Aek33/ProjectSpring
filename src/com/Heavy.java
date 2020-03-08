@@ -2,13 +2,11 @@ package com;
 
 public abstract class Heavy extends Appliances{
 
-    private String Name, Manufacturer, Color;
+    private String Manufacturer, Color;
     private double Price;
     private int HeavyLength, HeavyWidth, HeavyHeight, HeavyWeight;
 
-    public String getName() {
-        return Name;
-    }
+
 
     public String getManufacturer() {
 
@@ -20,10 +18,7 @@ public abstract class Heavy extends Appliances{
         return Price;
     }
 
-    public void setName(String Type){
 
-        this.Name = Type;
-    }
 
     public void setManufacturer(String Manufacturer){
 
@@ -77,7 +72,7 @@ public abstract class Heavy extends Appliances{
 
     public Heavy(String Name, String Manufacturer, double Price, int HeavyLength,
                  int HeavyWidth, int HeavyHeight, int HeavyWeight, String Color){
-        this.Name = Name;
+        super.setName(Name);
         this.Manufacturer = Manufacturer;
         this.Price = Price;
         this.HeavyLength = HeavyLength;

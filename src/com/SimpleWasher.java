@@ -17,9 +17,14 @@ public class SimpleWasher extends Washer  {
         this.WashingNoiseLevel = WashingNoiseLevel;
     }
 
+    @Override
+    public double TotalPrice() {
+        return getPrice();
+    }
+
     public void show() {
         System.out.println("Тип: " + getName() + "\n" + "Производитель: " + getManufacturer() + "\n" +
-                "Цена: " + getPrice() + " руб" + "\n" +
+                "Цена: " + TotalPrice() + " руб" + "\n" +
                 "Габариты: " + getHeavyLength() + "x" + getHeavyWidth() + "x" + getHeavyHeight() + " см" + "\n" +
                 "Вес: " + getHeavyWeight() +" кг" + "\n" +
                 "Максимальная загрузка: " + getWeightLimit() + " литров" + "\n" +

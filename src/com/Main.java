@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Main{
     public static void main(String[] args) {
-        System.out.println("Блок представления продукции");
+        /*System.out.println("Блок представления продукции");
         ArrayList<Appliances> Array = new ArrayList<>(10);
         Appliances Product = null;
         Random chaos = new Random();
@@ -51,7 +51,7 @@ public class Main{
         for (Appliances appliances : Array) {
             appliances.show();
             System.out.println("\n");
-        }
+        }*/
 
         System.out.println("Блок реализации декораторов");
 
@@ -61,18 +61,18 @@ public class Main{
                 2, 100, 400, 1);
 
         System.out.println(T2000.getName());
-        System.out.println(T2000.getPrice());
+        System.out.println(T2000.TotalPrice());
 
         System.out.println("Добавляем скидку в 35%");
         T2000 = new DecoratorDiscount(T2000, 35);
 
         System.out.println(T2000.getName());
-        System.out.println(T2000.getPrice());
+        System.out.println(T2000.TotalPrice());
 
         System.out.println("Добавляем сумму доставки");
         T2000 = new DecoratorDelivery(T2000);
 
         System.out.println(T2000.getName());
-        System.out.println(T2000.getPrice());
+        System.out.println(T2000.TotalPrice());
     }
 }

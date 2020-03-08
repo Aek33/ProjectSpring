@@ -3,31 +3,28 @@ package com;
 public class DecoratorDiscount extends BaseDecorator {
 
     private double DiscountPercentage;
+    private Appliances appliance;
 
     public double getDiscountPercentage(){
         return DiscountPercentage;
     }
 
-    public void setDiscountPercentage(){
-        this.DiscountPercentage = DiscountPercentage;
-    }
-    public DecoratorDiscount(Appliances appliance, double DiscountPercentage) {
-        super(appliance);
+    public DecoratorDiscount(Appliances appliance, double DiscountPercentage){
+        this.appliance = appliance;
         this.DiscountPercentage = DiscountPercentage;
     }
 
+    @Override
+    public double TotalPrice() {
+            return appliance.TotalPrice() - (appliance.TotalPrice()*(getDiscountPercentage()/100));
+    }
     @Override
     public String getName() {
         return appliance.getName() + " Со скидкой: " + getDiscountPercentage() + "%";
     }
-
-    @Override
-    public double getPrice() {
-        return appliance.getPrice() - (appliance.getPrice()*(getDiscountPercentage()/100));
-    }
-
     @Override
     public void show() {
         appliance.show();
     }
+
 }
