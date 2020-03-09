@@ -1,4 +1,4 @@
-package com;
+package com.appliances;
 
 public abstract class Kettle extends Light {
     private String Material;

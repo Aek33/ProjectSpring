@@ -1,21 +1,20 @@
-package com;
+package com.appliances;
 
-public class Dryer extends Washer {
+public class SimpleWasher extends Washer  {
+    private int WashingNoiseLevel;
 
-    private int DryerNoiseLevel;
-
-    public int getDryerNoiseLevel(){
-        return DryerNoiseLevel;
+    public int getWashingNoiseLevel(){
+        return WashingNoiseLevel;
     }
 
-    public void setDryerNoiseLevel(int DryerNoiseLevel){
-        this.DryerNoiseLevel = DryerNoiseLevel;
+    public void setWashingNoiseLevel(int WashingNoiseLevel){
+        this.WashingNoiseLevel = WashingNoiseLevel;
     }
 
-    public Dryer(String Name, String Manufacturer, double Price, int Length, int Width, int Height, int Weight,
-                 String Color, int WeightLimit, String LoadingType, int DryerNoiseLevel){
+    public SimpleWasher(String Name, String Manufacturer, double Price, int Length, int Width, int Height, int Weight,
+            String Color, int WeightLimit, String LoadingType, int WashingNoiseLevel){
         super(Name, Manufacturer, Price, Length, Width, Height, Weight, Color, WeightLimit, LoadingType);
-        this.DryerNoiseLevel = DryerNoiseLevel;
+        this.WashingNoiseLevel = WashingNoiseLevel;
     }
 
     @Override
@@ -31,6 +30,6 @@ public class Dryer extends Washer {
                 "Максимальная загрузка: " + getWeightLimit() + " литров" + "\n" +
                 "Тип загрузки: " + getLoadingType() + "\n" +
                 "Цвет: " + getColor() + "\n" +
-                "Уровень шума при отжиме: " + getDryerNoiseLevel() + " Дб");
+                "Уровень шума при стирке: " + getWashingNoiseLevel() + " Дб");
     }
 }

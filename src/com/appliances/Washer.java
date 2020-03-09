@@ -1,4 +1,4 @@
-package com;
+package com.appliances;
 
 public abstract class Washer extends Heavy {
     private int WeightLimit;

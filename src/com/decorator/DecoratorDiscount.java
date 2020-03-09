@@ -1,4 +1,6 @@
-package com;
+package com.decorator;
+
+import com.appliances.Appliances;
 
 public class DecoratorDiscount extends BaseDecorator {
 

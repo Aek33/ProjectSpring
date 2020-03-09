@@ -1,4 +1,4 @@
-package com;
+package com.appliances;
 
 public class ElectricKettle extends Kettle {
 

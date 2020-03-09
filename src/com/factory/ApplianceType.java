@@ -1,0 +1,7 @@
+package com.factory;
+
+public enum ApplianceType {
+    REFRIGERATOR, SIMPLE_FREEZER, SIMPLE_WASHER, DRYER, TEAPOT, ELECTRIC_KETTLE, MICROWAVE
+
+
+}

@@ -1,4 +1,4 @@
-package com;
+package com.appliances;
 public abstract class Freezer extends Heavy{
 
     private int Volume, NoiseLevel;
@@ -18,7 +18,6 @@ public abstract class Freezer extends Heavy{
     public void setNoiseLevel(int NoiseLevel){
         this.NoiseLevel = NoiseLevel;
     }
-
 
     public Freezer(String Name, String Manufacturer, double Price, int Length, int Width, int Height, int Weight,
                    String Color, int Volume, int NoiseLevel){

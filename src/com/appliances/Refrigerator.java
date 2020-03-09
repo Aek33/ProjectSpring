@@ -1,4 +1,6 @@
-package com;
+package com.appliances;
+
+
 public class Refrigerator extends Freezer{
     private int NumberOfCells, FreezerVolume, ColdstoreVolume, NumberOfDoors;
 
@@ -35,7 +37,7 @@ public class Refrigerator extends Freezer{
     }
 
     public Refrigerator(String Name, String Manufacturer, double Price, int Length, int Width, int Height, int Weight,
-                        String Color, int Volume, int NoiseLevel,  int NumberOfCells, int FreezerVolume,
+                        String Color, int Volume, int NoiseLevel, int NumberOfCells, int FreezerVolume,
                         int ColdstoreVolume, int NumberOfDoors){
         super(Name, Manufacturer, Price, Length, Width, Height, Weight, Color, Volume, NoiseLevel);
         this.NumberOfCells = NumberOfCells;
@@ -43,7 +45,6 @@ public class Refrigerator extends Freezer{
         this.ColdstoreVolume = ColdstoreVolume;
         this.NumberOfDoors = NumberOfDoors;
     }
-
 
     @Override
     public double TotalPrice() {

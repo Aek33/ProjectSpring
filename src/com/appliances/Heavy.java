@@ -1,12 +1,10 @@
-package com;
+package com.appliances;
 
 public abstract class Heavy extends Appliances{
 
     private String Manufacturer, Color;
     private double Price;
     private int HeavyLength, HeavyWidth, HeavyHeight, HeavyWeight;
-
-
 
     public String getManufacturer() {
 
@@ -18,14 +16,12 @@ public abstract class Heavy extends Appliances{
         return Price;
     }
 
-
-
     public void setManufacturer(String Manufacturer){
 
         this.Manufacturer = Manufacturer;
     }
 
-    public void setPrice(int Price){
+    public void setPrice(double Price){
 
         this.Price = Price;
     }

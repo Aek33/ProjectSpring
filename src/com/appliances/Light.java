@@ -1,4 +1,4 @@
-package com;
+package com.appliances;
 
 public abstract class Light extends Appliances{
     private String Manufacturer, Color;
