@@ -36,10 +36,6 @@ public class ApplianceFactory {
                 Thing = new ElectricKettle("Чайник T4", "Vitek", 600, 20,
                         20, 30, "Прозрачный","Пластик",  2);
                 break;
-            case MICROWAVE:
-                Thing = new Microwave("Микроволновка MW100", "R.S.", 700,
-                        40,30, 30, "Белый",9, 600);
-                break;
             default:
                 throw new IllegalStateException("Неизвестный продукт: " + name);
         }

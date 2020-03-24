@@ -20,7 +20,7 @@ public abstract class Light extends Appliances{
         this.Manufacturer = Manufacturer;
     }
 
-    public void setPrice(int Price){
+    public void setPrice(double Price){
 
         this.Price = Price;
     }

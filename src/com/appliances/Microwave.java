@@ -1,6 +1,8 @@
 package com.appliances;
 
-public class Microwave extends Light {
+import java.io.Serializable;
+
+public class Microwave extends Light{
 
    private int Volume, MicWavePower;
 
@@ -37,7 +39,7 @@ public class Microwave extends Light {
                 + "Производитель: " + getManufacturer() + "\n" + "Цена: " + TotalPrice() + " руб" + "\n"
                 + "Габариты: " + getLightLength() + "x" + getLightWidth() + "x" + getLightHeight() + " см" + "\n"
                 + "Цвет: " + getColor() + "\n" + "Внутренний объем: " + getVolume() + " куб.см" + "\n"
-                + "Мощьность микроволн: " + getMicWavePower() + " Вт");
+                + "Мощность микроволн: " + getMicWavePower() + " Вт");
 
     }
 }

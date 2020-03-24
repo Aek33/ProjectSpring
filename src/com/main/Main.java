@@ -1,71 +1,40 @@
 package com.main;
 
-import com.appliances.*;
-import com.decorator.DecoratorDelivery;
-import com.decorator.DecoratorDiscount;
-import com.factory.ApplianceFactory;
-import com.factory.ApplianceType;
+import java.util.Scanner;
 
-import java.util.ArrayList;
-import java.util.Random;
+import static java.lang.Double.parseDouble;
 
 public class Main{
     public static void main(String[] args) {
-        System.out.println("Блок представления продукции");
-        ApplianceFactory factory = new ApplianceFactory();
-        ArrayList<Appliances> Array = new ArrayList<>(10);
-        Appliances Product = null;
-        Random chaos = new Random();
-        for(int i = 0; i < 10; i++){
-            int RandomNumber = chaos.nextInt(7);
-            switch (RandomNumber){
-                case 0:
-                    Product = factory.createThing(ApplianceType.REFRIGERATOR);
-                    break;
-                case 1:
-                    Product = factory.createThing(ApplianceType.SIMPLE_FREEZER);
-                    break;
-                case 2:
-                    Product = factory.createThing(ApplianceType.SIMPLE_WASHER);
-                    break;
-                case 3:
-                    Product = factory.createThing(ApplianceType.DRYER);
-                    break;
-                case 4:
-                    Product = factory.createThing(ApplianceType.ELECTRIC_KETTLE);
-                    break;
-                case 5:
-                    Product = factory.createThing(ApplianceType.TEAPOT);
-                    break;
-                case 6:
-                    Product = factory.createThing(ApplianceType.MICROWAVE);
-                    break;
+        LogischesZentrum Daemon = new LogischesZentrum();
+        double result = 0.0;
+        double One;
+        double Two;
+        while (true) {
+            Scanner calcScanner = new Scanner(System.in);
+            System.out.println("Введите пример с одним двействием!");
+
+            if (calcScanner.findInLine("(-?\\d+\\.?\\d*)?\\s*(\\S)\\s*(-?\\d+\\.?\\d*)") != null) {
+
+
+                if (calcScanner.match().group(1) != null) {
+                    One = parseDouble(calcScanner.match().group(1));
+                    Two = parseDouble(calcScanner.match().group(3));
+                    result = Daemon.action(One, Two, calcScanner.match().group(2));
+
+                } else {
+                    Two = parseDouble(calcScanner.match().group(3));
+                    result = Daemon.action(result, Two, calcScanner.match().group(2));
+
+                }
+                System.out.println(result);
+
             }
-            Array.add(i, Product);
+
+            else {
+                System.out.println("Введите корректные значения!");
+            }
+
         }
-        for (Appliances appliances : Array) {
-            appliances.show();
-            System.out.println("\n");
-        }
-
-        System.out.println("Блок реализации декораторов");
-
-        System.out.println("Создаем экземпляр холодильника");
-        Appliances T2000 = factory.createThing(ApplianceType.REFRIGERATOR);
-
-        System.out.println(T2000.getName());
-        System.out.println(T2000.TotalPrice());
-
-        System.out.println("Добавляем скидку в 35%");
-        T2000 = new DecoratorDiscount(T2000, 35);
-
-        System.out.println(T2000.getName());
-        System.out.println(T2000.TotalPrice());
-
-        System.out.println("Добавляем сумму доставки");
-        T2000 = new DecoratorDelivery(T2000);
-
-        System.out.println(T2000.getName());
-        System.out.println(T2000.TotalPrice());
     }
 }
