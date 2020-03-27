@@ -65,8 +65,6 @@ public class CalcMain {
                 }
                 ExpBlocks.set((i - 1), Double.toString(Result));
                 ExpBlocks.removeAll(ExpBlocks.subList(i,i + 2));
-                i = 0;
-
             }
         }
         System.out.println(ExpBlocks);
@@ -86,7 +84,6 @@ public class CalcMain {
                 }
                 ExpBlocks.set((i - 1), Double.toString(Result));
                 ExpBlocks.removeAll(ExpBlocks.subList(i,i + 2));
-                i = 0;
             }
         }
         System.out.println(ExpBlocks);
